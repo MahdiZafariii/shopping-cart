@@ -1,0 +1,112 @@
+.cartCenter {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  max-width: 1170px;
+  margin-top: 50px;
+}
+
+.cartItemList {
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.cartItem {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+}
+.cartItem .cartImg {
+  width: 100px;
+  height: 100px;
+}
+.cartImg img {
+  width: 100%;
+  height: auto;
+}
+.cartSummery {
+  width: 30%;
+  margin-left: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 1rem;
+}
+.summeryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cartSummery .net {
+  border-top: 1px solid #ccc;
+}
+.btnGroup button {
+  outline: none;
+  border: 1px solid #6d28d9;
+  color: #6d28d9;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+.btnGroup button:first-child {
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+.btnGroup button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.btnGroup button:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .cartCenter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cartItemList {
+    width: 80vw;
+  }
+  .cartSummery {
+    width: 80vw;
+    margin: 10px 0 0 0;
+  }
+}
+@media (max-width: 480px) {
+  .cartItem div:first-child {
+    grid-area: i;
+  }
+  .cartItem p {
+  }
+  .cartItem p:first-child {
+    grid-area: n;
+  }
+  .cartItem p:last-child {
+    grid-area: p;
+  }
+  .cartItem div:last-child {
+    grid-area: b;
+  }
+  .cartItem {
+    display: grid;
+    max-width: 250px;
+    grid-template-areas:
+      "i n "
+      "i p "
+      "b b ";
+  }
+  .btnGroup {
+    margin-top: 15px;
+  }
+}

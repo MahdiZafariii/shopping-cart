@@ -1,0 +1,25 @@
+.empty {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 300px;
+}
+.shopBtn {
+  outline: none;
+  margin-top: 1rem;
+  border: none;
+  width: 8rem;
+  height: 2.5rem;
+  padding: 10px 17px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #ede9fe;
+  background-color: #6676e6;
+}
+.boxIcon {
+  font-size: 10rem;
+  color: #ddd6fe;
+}

@@ -1,0 +1,40 @@
+label {
+  font-weight: 800;
+  margin-bottom: 5px;
+  display: flex;
+}
+input + label {
+  display: inline-flex;
+  font-weight: 800;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 70vw;
+  max-width: 400px;
+  padding: 6px 12px;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  color: #444;
+  border-radius: 5px;
+}
+.formControl {
+  margin-bottom: 20px;
+}
+.error {
+  color: red;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  border: 2px solid #6676e6 !important;
+  outline: none;
+}

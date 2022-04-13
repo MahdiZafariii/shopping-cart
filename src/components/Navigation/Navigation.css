@@ -1,0 +1,211 @@
+.mainNavigation {
+  background-color: #6676e6;
+  width: 100vw;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0 0;
+  z-index: 11;
+}
+.desktopHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.desktopNav {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.desktopNav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desktopNav li {
+  margin: 0px 1rem;
+}
+.desktopNav a {
+  color: #c1c8f5;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.logoNav {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.logoNav p {
+  margin-left: 5px;
+}
+.desktopNav a:hover,
+.activeLink {
+  border-radius: 5px;
+  color: #fff !important;
+}
+.cartLink {
+  position: relative;
+  background-color: #fff;
+  color: #6676e6 !important;
+  border-radius: 5px;
+}
+.cartLink a {
+  color: #6676e6 !important;
+}
+.cartLink a:hover {
+  background-color: #fff;
+  color: #6676e6 !important;
+}
+.desktopNav span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #056cf1;
+  color: #fff;
+  right: -6px;
+  top: -7px;
+}
+.signInBtn {
+  border-radius: 5px;
+  color: #eef2ff !important;
+  background: rgb(109, 40, 217);
+  background: linear-gradient(
+    55deg,
+    rgba(109, 40, 217, 0.8326681014202556) 26%,
+    rgba(29, 78, 216, 0.8550770650056898) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.signInBtn li {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userMenu {
+  position: absolute;
+  width: 10rem;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 5px;
+  top: 8%;
+  right: 16.5%;
+  z-index: 15;
+}
+.userMenu li {
+  padding: 12px 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userIcon {
+  margin-right: 5px;
+  margin-top: 4px;
+  color: #6d28d9;
+}
+.signoutIcons {
+  color: #fb7185;
+}
+.profileOption:hover {
+  color: #6d28d9;
+}
+.signoutOption:hover {
+  color: #fb7185;
+}
+.mobileHeader {
+  width: 100%;
+  display: none;
+  align-items: center;
+}
+.mobileHeader h1 {
+  color: #fff;
+  margin-left: 8px;
+}
+.mobileNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.iconContainer {
+  width: 3.5rem;
+  height: auto;
+  position: absolute;
+  top: 2%;
+  right: 0;
+  cursor: pointer;
+  transition: all 2s ease-in-out;
+  /* color: #fff; */
+}
+.mobileNav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 72px;
+  right: 0;
+  width: 100%;
+  border-top: #6d28d9 1px solid;
+  z-index: 12;
+}
+.mobileNav ul li {
+  background: #677ae6;
+  background: linear-gradient(90deg, #677ae6 0%, #6ca3e6 80%);
+  background: -webkit-linear-gradient(90deg, #677ae6 0%, #6ca3e6 80%);
+  background: -moz-linear-gradient(90deg, #677ae6 0%, #6ca3e6 80%);
+  padding: 0.5rem;
+}
+.mobileNav ul a {
+  color: #fff;
+}
+.mobileNav ul a:hover {
+  color: #fb7185;
+  transition: 0.2s;
+}
+
+.cartLinkMobile {
+  position: relative;
+  color: #fff !important;
+  font-size: 22px;
+  padding: 2px 7px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.cartLinkMobile a {
+  padding: 8px;
+}
+.cartLinkMobile span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #6676e6;
+  right: 5px;
+  top: -7px;
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+  .desktopHeader {
+    display: none;
+  }
+  .mobileHeader {
+    display: flex;
+    z-index: 12;
+  }
+}

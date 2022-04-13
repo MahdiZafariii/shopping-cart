@@ -1,0 +1,57 @@
+.summeryCenter {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  max-width: 1170px;
+  margin-top: 50px;
+}
+
+.summeryItemList {
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  height: 15em;
+}
+.summeryItemList h3 {
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.summeryItemList div {
+  color: rgb(110, 110, 110);
+  padding: 1rem;
+}
+.summery {
+  width: 30%;
+  margin-left: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.productPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.productDescribtion {
+  padding: 1rem 0 0 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+.products {
+  border-bottom: 1px solid #ccc;
+  min-height: 4rem;
+}
+.totalPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}

@@ -1,0 +1,23 @@
+.LoginFormContainer {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 100px 0;
+}
+input:focus {
+  border: 2px solid #6d28d9;
+  outline: none;
+}
+button:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #444;
+}
+.btn {
+  outline: none;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ede9fe;
+  color: #6d28d9;
+}

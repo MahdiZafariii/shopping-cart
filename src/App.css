@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  user-select: none;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: unset;
+}
